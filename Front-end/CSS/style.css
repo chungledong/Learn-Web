@@ -1,0 +1,62 @@
+/* style.css */
+
+/* Bộ chọn phần tử cùng loại */
+body {
+    font-family: Verdana, Arial, sans-serif; /* Font chữ mặc định, ưu tiên Verdana */
+    line-height: 1.6; /* Khoảng cách dòng */
+    margin: 20px; /* Bỏ khoảng cách mặc định của trình duyệt */
+    /* padding: 0px; */ /* padding: 0px; cho body thường không cần thiết */
+    background-color: #f8f8f8;
+    color: #333; /* Màu chữ chính */
+}
+
+h1, h2, h3 {
+    color: darkblue; /* Màu chữ tiêu đề */
+    text-align: center; /* Căn giữa tiêu đề */
+}   
+
+/* Bộ chọn phần tử có thuộc tính ID - ID selector */
+#thong-tin-chung, #ky-nang, #kinh-nghiem { /* Dùng dấu '#' trước tên ID */
+    background-color: #fff; /* Màu nền cho phần thông tin chung */
+    padding: 20px; /* Khoảng đệm bên trong */
+    border-radius: 8px; /* Bo góc */
+    margin-bottom: 20px; /* Khoảng cách dưới phần thông tin chung */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */  
+}
+
+/* Chọn một phần tử nằm bên trong phần tử khác - Descendant selector */
+#thong-tin-chung img {
+    display: block; /* Hiển thị hình ảnh dưới dạng khối */
+    margin: 20px auto; /* Căn giữa hình ảnh */
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần chứa */
+    height: auto; /* Tự động điều chỉnh chiều cao để giữ tỉ lệ */
+    border-radius: 50%; /* Bo góc hình ảnh (tạo hình tròn nếu ảnh vuông) */
+    border: 2px solid #0056b3; /* Đường viền cho hình ảnh */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho hình ảnh */
+}
+.noi-bat {
+    background-color: yellow;
+    border-radius: 8px; /* Bo góc cho tiêu đề nổi bật */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng bên trong cho tiêu đề nổi bật */
+}
+ul, ol, li { /* Áp dụng line-height cho cả ul, ol và từng li */
+    line-height: 1.8; /* Khoảng cách dòng cho danh sách */
+}
+
+hr {
+    border-top: 1px dashed #ccc; /* Đường viền trên cho đường kẻ ngang */
+    height: 1px; /* Chiều cao của đường kẻ ngang (thực tế là độ dày của border-top) */
+    background-color: #ccc; /* Màu nền cho đường kẻ ngang (có thể bỏ nếu chỉ dùng border-top) */
+    margin: 40px 0; /* Khoảng cách trên và dưới đường kẻ ngang */
+    border-bottom: none; /* Đảm bảo không có border dưới mặc định */
+    border-left: none; /* Đảm bảo không có border trái mặc định */
+    border-right: none; /* Đảm bảo không có border phải mặc định */
+}
+
+footer {
+    text-align: center; /* Căn giữa nội dung chân trang */
+    padding: 2px; /* Khoảng đệm trên và dưới cho chân trang */
+    background-color: #eee; /* Màu nền cho chân trang */
+    color: #666;
+    border-top: 1px solid #ccc; /* Đường viền trên cho chân trang */
+}
