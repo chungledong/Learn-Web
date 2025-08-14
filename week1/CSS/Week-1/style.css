@@ -10,11 +10,21 @@ body {
     color: #333; /* Màu chữ chính */
 }
 
+div{
+    display: block;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 h1, h2, h3 {
     color: darkblue; /* Màu chữ tiêu đề */
     text-align: center; /* Căn giữa tiêu đề */
 }   
 
+p{
+    text-align: center;
+}
 /* Bộ chọn phần tử có thuộc tính ID - ID selector */
 #thong-tin-chung, #ky-nang, #kinh-nghiem { /* Dùng dấu '#' trước tên ID */
     background-color: #fff; /* Màu nền cho phần thông tin chung */
@@ -34,6 +44,7 @@ h1, h2, h3 {
     border: 2px solid #0056b3; /* Đường viền cho hình ảnh */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho hình ảnh */
 }
+/* Thuộc tính class */
 .noi-bat {
     background-color: yellow;
     border-radius: 8px; /* Bo góc cho tiêu đề nổi bật */
